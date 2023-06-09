@@ -1,12 +1,9 @@
-# Credit: Jordan Bentley 2016-01-26
-# v2.0
-# TODO: Clean code, Lists turn to dictonaries, rjust applied to loop function.
-
+# J-Bentley 2016-01-26
 class text:
     BOLD = '\033[1m'
     END = '\033[0m'
     
-def loop(burger): #wip, but working...
+def loop(burger):
     for y in burger[0:1]:
         print "\n"+burger[2]
         print"  Bun Type:"
@@ -22,7 +19,7 @@ TITLE = """\n__McDONALDS BURGER DIRECTORY__\n A list of burger ingredients\n\n B
     (6)McChicken\n    (7)Filet\n    (8)Big Mac\n    (9)Quarter Cheese\n    (10)Quarter BLT\n    (11)Angus Bacon Cheese\n    (12)Angus Mighty\n    (13)The 12    \n\nEnter the number next to a burger to view it\n(0)Display menu\n(00)Exit Program"""
 
 #LIST ASSIGNMENTS: Declares variables equal to a sequence of string constants.
-#First/second sequences reserved for bun type/patty type (WIP)
+#First/second sequences reserved for bun type/patty type
 hamburger = ["Regular", "Regular", text.BOLD +"Hamburger"+ text.END,"Ketchup", "Mustard", "Recon Onion", "Pickle"]
 cheeseburger = ["Regular", "Regular", text.BOLD +"Cheeseburger"+ text.END,"Ketchup", "Mustard", "Recon Onion", "Pickle", "Cheese"]
 double_cheeseburger = ["Regular", "Regular(x2)", text.BOLD +"Double Cheeseburger"+ text.END, "Ketchup", "Mustard", "Recon Onion", "Pickle(x2)", "Cheese(x2)"]
